@@ -120,6 +120,7 @@ nav a {
   align-items: center;
   overflow: hidden;
   border-radius: 4px;
+  flex: 0 1 90px;
 }
 
 .product-image img {
