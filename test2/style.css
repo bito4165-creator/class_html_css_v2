@@ -1,0 +1,213 @@
+:root {
+  /* 색 */
+  --c-point: #2ec5c0;
+  --c-point-dark: #23a4a0;
+  --c-new: #f5811f;
+  --c-text: #333333;
+  --c-sub: #767676;
+  --c-dim: #ababab;
+  --c-bg-soft: #f7f7f7;
+  --c-line: #e5e5e5;
+
+  /* 글자 */
+  --fs-blog: 32px;
+  --fs-title: 20px;
+  --fs-body: 15px;
+  --fs-card: 14px;
+  --fs-meta: 13px;
+  --fs-nav: 13px;
+
+  /* 간격 */
+  --sp-1: 4px;
+  --sp-2: 8px;
+  --sp-3: 12px;
+  --sp-4: 16px;
+  --sp-6: 24px;
+  --sp-8: 32px;
+  --sp-12: 48px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100;
+  max-width: 1000px;
+}
+main {
+  display: flex;
+}
+
+.banner {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  background-image: url("https://picsum.photos/seed/prod1/1000/1000");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.banner h2 {
+  font-size: var(--fs-blog);
+  font-weight: bold;
+  position: relative;
+}
+
+.banner-manager {
+  font-size: var(--fs-title);
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 200px;
+}
+
+.navbar {
+  width: 170px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  margin-left: 25px;
+  margin-right: 15px;
+  padding: 10px 10px;
+  gap: 10px;
+  position: fixed;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  color: #c6c6c6;
+}
+
+.nav-total p {
+  font-size: var(--fs-body);
+  font-weight: bold;
+  position: relative;
+}
+
+.nav-category {
+  font-size: var(--fs-nav);
+  display: flex;
+  flex-direction: column;
+}
+
+.badge img {
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+  margin-left: var(--sp-1);
+  width: 10px;
+  height: 10px;
+}
+
+.nav-category a {
+  text-decoration: none;
+  color: #c6c6c6;
+}
+.nav-category a:hover {
+  color: black;
+}
+
+.nav-manager {
+  font-size: var(--fs-body);
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  cursor: pointer;
+}
+
+.main-content {
+  margin-left: 235px;
+  margin-right: 35px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.content-title {
+  font-size: var(--fs-title);
+  padding: 25px;
+}
+
+.content-title strong {
+  color: #0ec0b9;
+}
+
+.content-manager {
+  position: absolute;
+  right: 0;
+  top: 25px;
+  cursor: pointer;
+}
+
+.content-cards {
+  width: 730px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.content-card {
+  width: calc((100% - 60px) / 4);
+  display: flex;
+  flex-direction: column;
+}
+
+.content-card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.content-card p {
+  margin: 10px;
+  height: 90px;
+  font-size: var(--fs-card);
+
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+}
+
+.content-card span {
+  font-size: var(--fs-meta);
+  margin: 10px;
+  color: #c6c6c6;
+}
+
+.page-change {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  margin-bottom: 20px;
+}
+
+.change-left a {
+  text-decoration: none;
+  color: black;
+  font-size: var(--fs-nav);
+}
+
+.change-right a {
+  text-decoration: none;
+  color: black;
+  font-size: var(--fs-nav);
+}
+
+.pages {
+  display: flex;
+  gap: 15px;
+  font-size: var(--fs-nav);
+}
+
+.pages a {
+  text-decoration: none;
+  color: black;
+}
+
+.pages a:hover {
+  color: aqua;
+}
