@@ -44,6 +44,7 @@ main {
 .banner {
   height: 60px;
   display: flex;
+  justify-content: space-between;
   align-items: center;
   background-image: url("https://picsum.photos/seed/prod1/1000/1000");
   background-repeat: no-repeat;
@@ -62,6 +63,15 @@ main {
   position: absolute;
   top: 0;
   left: 200px;
+}
+
+.banner a {
+  text-decoration: none;
+}
+
+.sns {
+  font-size: var(--fs-blog);
+  margin-right: 30px;
 }
 
 .navbar {
@@ -91,7 +101,7 @@ main {
   flex-direction: column;
 }
 
-.badge img {
+.badge-new img {
   display: inline-block;
   align-items: center;
   justify-content: center;
@@ -151,6 +161,7 @@ main {
   width: calc((100% - 60px) / 4);
   display: flex;
   flex-direction: column;
+  position: relative;
 }
 
 .content-card img {
@@ -161,20 +172,28 @@ main {
 
 .content-card p {
   margin: 10px;
-  height: 90px;
+  height: 80px;
   font-size: var(--fs-card);
 
-  overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
   -webkit-line-clamp: 4;
   -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 
 .content-card span {
   font-size: var(--fs-meta);
   margin: 10px;
   color: #c6c6c6;
+}
+
+.badge-new-content img {
+  width: 13px;
+  height: 13px;
+  position: absolute;
+  top: 8px;
+  right: 8px;
 }
 
 .page-change {
