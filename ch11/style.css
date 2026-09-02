@@ -88,7 +88,7 @@ ul {
 .group {
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 6px;
 }
 
 .group h4 {
@@ -98,12 +98,17 @@ ul {
 
 .group a {
   color: var(--ad-side-text);
-  font: 14px;
-  transition: color 0.3s ease;
+  font-size: 14px;
+  transition:
+    color 0.3s ease,
+    background-color 0.3s ease;
+  border-radius: 5px;
+  padding: 8px;
 }
 
 .group a:hover {
   color: var(--ad-surface);
+  background-color: var(--ad-side-active);
 }
 
 /* 메인 */
