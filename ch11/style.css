@@ -137,12 +137,18 @@ main {
   background-color: var(--ad-bg);
   width: 300px;
   font-size: 13px;
-  padding: 6px;
+  padding: 8px;
   border-radius: 5px;
-}
+  border: 1px solid var(--ad-line);
 
-.searchbar p {
-  color: var(--ad-sub);
+  transition:
+    border-color 0.2s ease,
+    background 0.2s ease;
+}
+.searchbar:focus {
+  outline: none;
+  border-color: var(--ad-primary);
+  background: var(--ad-surface);
 }
 
 .user {
@@ -263,6 +269,14 @@ main {
   font-size: 14px;
   color: var(--ad-text);
   border-bottom: 2px solid var(--ad-line);
+}
+
+.order-table tbody tr {
+  transition: background-color 0.3s ease;
+}
+
+.order-table tbody tr:hover {
+  background-color: var(--ad-bg);
 }
 
 .order-table tbody tr:last-child td {
